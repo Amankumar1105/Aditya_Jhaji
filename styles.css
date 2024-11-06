@@ -1,0 +1,113 @@
+/* Resetting some default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    /* width: 40px; */
+    width: 15%;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.breakingImage{
+    width: 100%;
+    border-radius: 8px;
+    height: 50%;
+}
+
+/* Main content styling */
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+}
+
+.news-card {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* text-align: center; */
+}
+
+.news-card h3 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.news-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
